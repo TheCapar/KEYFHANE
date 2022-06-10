@@ -1,0 +1,37 @@
+﻿<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="~/css/bootstrap.css" />
+    <link rel="stylesheet" href="~/css/normalize.css" />
+    <link rel="stylesheet" href="~/css/Layout.css" />
+    <link rel="stylesheet" href="~/css/Kayit.css" />
+    <title>Ana Sayfa</title>
+  </head>
+  <body>
+    <!--Giriş Yapıldıktan Sonraki Layout Kısmı-->
+    <header>
+      <div class="logo">
+        <a asp-controller="Home" asp-action="Index">
+          <img style="width:70px;height:70px;" src="~/images/Logo.png"
+        /></a>
+      </div>
+      <div class="baslik">
+        <a asp-controller="Home" asp-action="Index"><h1>KeyfHane</h1></a>
+      </div>
+      <div class="menu">
+        <ul>
+          <li><a asp-controller="Book" asp-action="Index">Kitap</a></li>
+          <li><a asp-controller="Music" asp-action="Index">Müzik</a></li>
+          <li><a asp-controller="Game" asp-action="Index">Oyun</a></li>
+          <li><a asp-controller="Voice" asp-action="Index">Sesli Sohbet</a></li>
+          <li><a asp-controller="Activity" asp-action="Index">Etkinlik</a></li>
+          <li><a asp-controller="Profil" asp-action="Index">Profil</a></li>
+          <li><a asp-controller="Login" asp-action="Login">Çıkış</a></li>
+        </ul>
+      </div>
+    </header>
+    <div>@RenderBody()</div>
+  </body>
+</html>

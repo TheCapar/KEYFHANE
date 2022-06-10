@@ -1,0 +1,41 @@
+* {
+    list-style-type: none;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  a:hover {
+      color:black;
+  }
+  header{
+      display: flex;
+      width: 100%;
+      background-color: rgb(201, 159, 240);
+      height: 100px;
+  }
+  .logo{
+      padding-left: 10%;
+      padding-top: 1.5%;
+  }
+  .baslik {
+      padding-left: 1%;
+  }
+  .menu {
+      width: 70%;
+  }
+  .menu ul {
+      padding-left: 15%;
+      display: flex;
+  }
+  .menu ul li {
+      padding-left: 6%;
+      padding-top: 3%;
+  }
+  .menu ul li a {
+      font-size: 24px;
+      color: whitesmoke;
+  }
+  .menu ul li a:hover{
+      color: black;
+  }

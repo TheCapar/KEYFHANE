@@ -1,0 +1,33 @@
+﻿@model KeyfHane.Models.User
+@{
+    ViewData["Title"] = "Register";
+    Layout = "~/Views/Shared/_LayoutGiris.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="~/css/bootstrap.css" />
+    <link rel="stylesheet" href="~/css/normalize.css" />
+    <link rel="stylesheet" href="~/css/Layout.css" />
+    <link rel="stylesheet" href="~/css/Kayit.css" />
+    <title>Ana Sayfa</title>
+  </head>
+<body>
+  <form class="giris">
+      <label class="form-label">Başındaki "0" Hariç Telefon Numaranızı Giriniz:</label>
+      <input type="text" name="Number" class="form-control"/>
+      <label class="form-label">Şifrenizi Giriniz:</label>
+      <input type="text" name="Password" class="form-control"/>
+      <label class="form-label">Şifrenizi Tekrar Giriniz:</label>
+      <input type="text" name="Password2" class="form-control"/>
+      <input type="submit" class="btn btn-secondary" value="Kayıt Olmak İçin Tıklayınız">
+      <button type="button" onclick="location.href='@Url.Action("Login", "Login")'" style="margin-top: 20px;" class="btn btn-primary">Girişe Dönmek İçin Tıklayınız</button>
+    </form>
+</body>
+</html>
+s
+

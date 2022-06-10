@@ -1,0 +1,28 @@
+﻿@using KeyfHane.Models
+@model List<Activity>
+@{
+    ViewData["Title"] = "Activity";
+    Layout = "~/Views/Shared/_LayoutAnasayfa.cshtml";
+}
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="~/css/bootstrap.css" />
+    <link rel="stylesheet" href="~/css/normalize.css" />
+    <link rel="stylesheet" href="~/css/layout2.css" />
+    <link rel="stylesheet" href="~/css/kitap.css" />
+    <title>Ana Sayfa</title>
+  </head>
+  <body>
+    <div class="big-liste"><div class="liste"><ul>
+        @foreach(var item in Model){
+            <li style="display:flex;"> <p>@item.Name</p> <p style="padding:0 35%;">@item.Address</p> <p>@item.DateTime</p></li>
+        }
+
+    </ul></div></div>
+  </body>
+</html>
+

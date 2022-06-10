@@ -1,0 +1,20 @@
+.big-liste{
+    width: 100%;
+    padding-top: 50px;
+}
+.liste{
+    margin:0 10%;
+    width: 80%;
+    height: 550px;
+    border: 1px solid black;
+}
+.liste ul li {
+    border-bottom: 1px solid black;
+    height: 50px;
+}
+.liste ul li a{
+    color:black; position: absolute; padding-top: 15px; padding-left: 28%;
+}
+.liste ul li a:hover {
+    color: blue;
+}

@@ -1,0 +1,35 @@
+.icerik{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    padding-top: 30px;
+    text-align: center;
+}
+.card img{
+    width: 250px;
+    height: 175px;
+}
+.icerik2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 30px;
+    text-align: center;
+}
+.card:first-child{
+    margin-right: 10%;
+}
+.card:last-child{
+    margin-left: 10%;
+}
+.profil{
+    width: 100%;
+    margin-top: 180px;
+}
+.profil h3{
+    text-align:center;
+    padding-bottom: 40px;
+}
+.profil a{
+    padding-left: 48%;
+}

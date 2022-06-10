@@ -1,0 +1,45 @@
+* {
+  list-style-type: none;
+}
+a {
+  text-decoration:none;
+  color: white;
+}
+a:hover {
+    color:black;
+}
+header{
+    display: flex;
+    width: 100%;
+    background-color: rgb(201, 159, 240);
+    height: 100px;
+}
+.logo{
+    padding-left: 13%;
+    padding-top: 1.5%;
+}
+.baslik {
+    padding-left: 2%;
+}
+.baslik h1 {
+    padding-top: 10px;
+}
+.menu {
+    width: 70%;
+}
+.menu ul {
+    padding-left: 35%;
+    display: flex;
+}
+.menu ul li {
+    padding-left: 8%;
+    padding-top: 4%;
+}
+.menu ul li a {
+    font-size: 24px;
+    color: whitesmoke;
+}
+.menu ul li a:hover{
+    color: black;
+}
+

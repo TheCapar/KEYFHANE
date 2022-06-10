@@ -1,0 +1,86 @@
+﻿
+@{
+    ViewData["Title"] = "Anasayfa";
+    Layout = "~/Views/Shared/_LayoutAnasayfa.cshtml";
+}
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="~/css/bootstrap.css" />
+    <link rel="stylesheet" href="~/css/normalize.css" />
+    <link rel="stylesheet" href="~/css/layout2.css" />
+    <link rel="stylesheet" href="~/css/anasayfa.css" />
+    <title>Ana Sayfa</title>
+  </head>
+  <body>
+    <div class="icerik">
+      <div class="card" style="width: 15.7rem">
+        <img
+          src="~/images/kitap1.png"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Kitap</h5>
+          <a asp-controller="Book" asp-action="Index" class="btn btn-primary">Gitmek İçin Tıklayınız</a>
+        </div>
+      </div>
+      <div class="card" style="width: 15.7rem">
+        <img
+          src="~/images/muzik.jpg"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Müzik</h5>
+          <a asp-controller="Music" asp-action="Index"  class="btn btn-primary">Gitmek İçin Tıklayınız</a>
+        </div>
+      </div>
+      <div class="card" style="width: 15.7rem">
+        <img
+          src="~/images/oyun.png"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Sesli Sohbet</h5>
+          <a asp-controller="Voice" asp-action="Index"  class="btn btn-primary">Gitmek İçin Tıklayınız</a>
+        </div>
+      </div>
+    </div>
+    <div class="icerik2">
+      <div class="card" style="width: 15.7rem">
+        <img
+          src="~/images/seslisohbet.png"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Oyunlar</h5>
+          <a asp-controller="Game" asp-action="Index"  class="btn btn-primary">Gitmek İçin Tıklayınız</a>
+        </div>
+      </div>
+      <div class="card" style="width: 15.7rem">
+        <img
+          src="~/images/etkinlik.png"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Etkinlik</h5>
+          <a asp-controller="Activity" asp-action="Index" class="btn btn-primary">Gitmek İçin Tıklayınız</a>
+        </div>
+      </div>
+      <div class="card" style="width: 15.7rem">
+        <img
+          src="~/images/profil.png"
+          class="card-img-top"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Profil</h5>
+          <a asp-controller="Profil" asp-action="Index"  class="btn btn-primary">Gitmek İçin Tıklayınız</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+

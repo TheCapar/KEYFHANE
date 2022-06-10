@@ -1,0 +1,34 @@
+﻿@{
+    ViewData["Title"] = "Login";
+    Layout = "~/Views/Shared/_LayoutGiris.cshtml";
+}
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="~/css/bootstrap.css" />
+    <link rel="stylesheet" href="~/css/normalize.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="~/css/Layout.css" />
+    <link rel="stylesheet" href="~/css/Giris.css" />
+    <title>Ana Sayfa</title>
+  </head>
+  <body>
+        <form class="giris"> 
+           <label class="form-label">Başındaki "0" Hariç, Telefon Numaranızı Giriniz:</label>
+           <input type="text" name="Number" class="form-control"/>
+           <label class="form-label">Şifrenizi Giriniz</label>
+           <input type="text" name="Password" class="form-control"/>
+           <input  type="submit" value="Giris Yapmak İçin Tıklayınız" class="btn btn-outline-dark">
+        </form>
+    <div class="farkli-giris">
+        <ul>
+            <li><button onclick="location.href='@Url.Action("Index", "Home")'" type="button" class="btn btn-success">Misafir Olarak Girmek İçin Tıklayınız</button></li>
+            <li><button onclick="location.href='@Url.Action("Index", "Home")'" type="button" class="btn btn-primary">Facebook Girişi İçin Tıklayınız</button></li>
+            <li><button onclick="location.href='@Url.Action("Index", "Home")'" type="button" class="btn btn-warning">Google Girişi İçin Tıklayınız</button></li>    
+        </ul>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+﻿@using KeyfHane.Models
+@model List<Music>
+@{
+    ViewData["Title"] = "Activity";
+    Layout = "~/Views/Shared/_LayoutAnasayfa.cshtml";
+}
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="~/css/bootstrap.css" />
+    <link rel="stylesheet" href="~/css/normalize.css" />
+    <link rel="stylesheet" href="~/css/layout2.css" />
+    <link rel="stylesheet" href="~/css/kitap.css" />
+    <title>Ana Sayfa</title>
+  </head>
+  <body>
+    <div class="big-liste"><div class="liste">
+       @foreach(var item in Model){
+            <tr>
+               <td><article class="audio" style="padding-top:25px; display:flex;align-items: center; justify-content: space-around;">
+                     <audio controls>
+                        <source src="~/SongFiles/Selda Bağcan Fikrimden Geceler Yatabilmirem.mp3">
+                     </audio>
+                     <h3>@item.Name</h3>
+                    </article>
+               </td>
+            </tr>
+        }
+    </div></div>
+  </body>
+</html>
